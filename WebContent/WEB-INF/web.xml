@@ -47,6 +47,14 @@
 		<filter-name>httpHeaderSecurity</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
+	
+	<filter>
+		<filter-name>httpHeaderSecurityNoX</filter-name>
+		<filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
+		<async-supported>true</async-supported>
+	</filter>
+	
 	<session-config>
 		<cookie-config>
 			<http-only>true</http-only>
@@ -54,11 +62,7 @@
 		</cookie-config>
 	</session-config>
 
-	<filter>
-		<filter-name>httpHeaderSecurityNoX</filter-name>
-		<filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
-		<async-supported>true</async-supported>
-	</filter>
+	
 
 
 </web-app>
