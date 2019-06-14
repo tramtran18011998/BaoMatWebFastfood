@@ -72,6 +72,11 @@
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
 	
+	<filter-mapping>
+		<filter-name>httpHeaderSecurity</filter-name>
+		<url-pattern>image/*</url-pattern>
+	</filter-mapping>
+	
 	<session-config>
 		<cookie-config>
 			<http-only>true</http-only>
