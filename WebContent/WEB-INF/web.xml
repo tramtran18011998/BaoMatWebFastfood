@@ -47,35 +47,13 @@
 		<filter-name>httpHeaderSecurity</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-
-
+	
+	
 	<filter>
 		<filter-name>httpHeaderSecurityNoX</filter-name>
 		<filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
 		<async-supported>true</async-supported>
 	</filter>
-	<filter-mapping>
-		<filter-name>httpHeaderSecurity</filter-name>
-		<url-pattern>*.jsp</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-	</filter-mapping>
-
-	<filter-mapping>
-		<filter-name>httpHeaderSecurityNoX</filter-name>
-		<url-pattern>*.jpg</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-	</filter-mapping>
-
-	<filter-mapping>
-		<filter-name>httpHeaderSecurityNoX</filter-name>
-		<url-pattern>*.png</url-pattern>
-		<dispatcher>REQUEST</dispatcher>
-	</filter-mapping>
-	
-	<filter-mapping>
-		<filter-name>httpHeaderSecurity</filter-name>
-		<url-pattern>image/*</url-pattern>
-	</filter-mapping>
 	
 	<session-config>
 		<cookie-config>
@@ -84,7 +62,7 @@
 		</cookie-config>
 	</session-config>
 
-
+	<error-page><location>/oops.html</location></error-page>
 
 
 </web-app>
