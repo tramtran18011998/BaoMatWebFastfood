@@ -150,11 +150,11 @@
 									placeholder="Tên đăng nhập" require="">
 							</div>
 							<div class="form-group">
-								<input id="MK" class="form-control" placeholder="Mật khẩu"
+								<input type="password" id="MK" class="form-control" placeholder="Mật khẩu"
 									required="">
 							</div>
 							<div class="form-group">
-								<input id="MKnhaplai" class="form-control"
+								<input type="password" id="MKnhaplai" class="form-control"
 									placeholder="Nhập lại Mật khẩu" required="">
 							</div>
 
